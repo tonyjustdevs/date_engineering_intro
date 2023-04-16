@@ -1,0 +1,5 @@
+# builds image based on dockerfile
+docker build -t pypandas3.11_img:bash .
+
+# run a container based on image -> enter into bash
+docker run  -it pypandas3.11_img:bash
