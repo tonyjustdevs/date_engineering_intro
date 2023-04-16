@@ -2,13 +2,15 @@
 
 ## builds *image* based on **dockerfile**
 ```shell
-docker build -t pypandas3.11_img:bash .
+docker build -t pypan_3.11.1:bash .
 ```
 
 ## run a container based on image -> enter into bash
 ```bash
-docker run  -it pypandas3.11_img:bash```
+docker run  -it pypan_3.11.1:bash
 ```
+
+
 
 ### some python script
 ```python
