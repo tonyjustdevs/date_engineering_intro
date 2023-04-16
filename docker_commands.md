@@ -27,8 +27,8 @@ import pandas as pd
 print("Pandas installation was successful! Yeah!")
 ```
 
-# asdfadsf
- 
+#### inside container screenshot:
+![pipeline.py inside container /app folder](images/container_screenshot_pipeline.PNG)
 
 
 
