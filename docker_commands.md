@@ -1,15 +1,22 @@
 # Data Engineering intro
 
-## builds *image* based on **dockerfile**
-```shell
+#### builds *image* based on **dockerfile**
+```bash
 docker build -t pypan_3.11.1:bash .
 ```
 
-## run a container based on image -> enter into bash
+#### run a container based on image -> enter into bash
 ```bash
 docker run  -it pypan_3.11.1:bash
 ```
 
+#### copy local python script into containers /app folder
+```dockerfile
+FROM python:3.11.1
+RUN pip install pandas
+WORKDIR /app
+COPY pipeline.py pipeline.py
+ENTRYPOINT ["bash"]
 
 
 ### some python script
